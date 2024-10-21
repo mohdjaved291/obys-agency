@@ -215,6 +215,15 @@ main {
   position: relative;
   left: 28%;
   background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#video-container video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0;
 }
 
 #video-cursor {
@@ -498,6 +507,7 @@ main {
   min-height: 100vh;
   width: 100%;
   position: relative;
+  margin-top: 5vw;
 }
 
 .elem {
@@ -624,4 +634,18 @@ footer > h5 {
 _.canvas_container {
   z-index: 999999 !important;
   pointer-events: none;
+}
+
+#flag {
+  height: 25vw;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+#hero3 {
+  z-index: 999;
+  position: relative;
 }
